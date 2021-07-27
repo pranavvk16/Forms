@@ -1,0 +1,43 @@
+div.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.formContainer {
+    display: flex;
+    padding: 16px;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+td,
+th {
+    padding: 13px;
+}
+
+table {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+var x=document.querySelectorAll("ul.results-base li a[target="_black"]");
+for(y of x) {
+    var u=(y.src).split("-");
+    for(x of u) {
+        if(x.length==8) {
+            console.log(x);
+        }
+    }
+}
